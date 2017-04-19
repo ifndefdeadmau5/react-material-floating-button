@@ -124,7 +124,8 @@
 \*------------------------------------*/
 .mfb-component__button, .mfb-component__button--main, .mfb-component__button--child {
   background-color: #E40A5D;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   position: relative;
   border: none;
   border-radius: 50%;
