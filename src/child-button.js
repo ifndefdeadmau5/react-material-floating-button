@@ -19,13 +19,14 @@ var ChildButton = React.createClass({
     var className = classnames('mfb-component__button--child',
                                this.props.className,
                                {"mfb-component__button--disabled": this.props.disabled});
+    var Icon = this.props.iconButton;
     return (
       <li>
         <a href={this.props.href}
            data-mfb-label={this.props.label}
            onClick={this.handleOnClick}
            className={className}>
-          <i className={iconClass}></i>
+          <Icon className={iconClass}/>
         </a>
       </li>
     );
