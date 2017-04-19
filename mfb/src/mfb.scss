@@ -192,7 +192,8 @@ $number-of-child-buttons: 4 !default;
 
 .mfb-component__button{
   background-color: $main-color;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   position: relative;
   border: none;
   border-radius: 50%;
