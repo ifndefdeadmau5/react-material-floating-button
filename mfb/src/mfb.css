@@ -200,7 +200,9 @@
 
 .mfb-component__child-icon,
 .mfb-component__child-icon {
+  top: 5px;
   fill: #ff1744;
+  background-color: white;
   line-height: 40px;
   font-size: 12.85714px; }
 
