@@ -143,13 +143,14 @@
  *
  */
 .mfb-component__list {
+  background-color: white;
   list-style: none;
   margin: 0;
   padding: 0; }
   .mfb-component__list > li {
     display: block;
     position: absolute;
-    top: 0;
+    top: 5px;
     right: 9px;
     padding: 0;
     margin: 0; }
@@ -200,9 +201,7 @@
 
 .mfb-component__child-icon,
 .mfb-component__child-icon {
-  top: 5px;
   fill: #ff1744;
-  background-color: white;
   line-height: 40px;
   font-size: 12.85714px; }
 
