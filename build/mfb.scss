@@ -283,7 +283,9 @@ $number-of-child-buttons: 4 !default;
 .mfb-component__child-icon,
 .mfb-component__child-icon{
   @extend .mfb-component__icon;
+  top: 5px;
   fill: $main-color;
+  background-color: white;
   line-height: $child_button_size;
   font-size: 18 / 56 * $child_button_size;
 }
