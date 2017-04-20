@@ -108,7 +108,7 @@ $labels-padding-horizontal: 10px !default;
 /* SPACING ---------------------------*/
 
 // space between buttons
-$button-space: 70px !default;
+$button-space: 16px !default;
 
 // space between button and label
 $button-label-space: 70px !default;
@@ -212,11 +212,11 @@ $number-of-child-buttons: 4 !default;
  *
  */
 .mfb-component__list{
-  background-color: white;
   list-style: none;
   margin: 0;
   padding: 0;
   &>li{
+    background-color: white;
     display: block;
     position: absolute;
     top: 5px;
