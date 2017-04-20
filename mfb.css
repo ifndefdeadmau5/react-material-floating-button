@@ -147,6 +147,7 @@
   margin: 0;
   padding: 0; }
   .mfb-component__list > li {
+    border-radius: 50%;
     background-color: white;
     display: block;
     position: absolute;

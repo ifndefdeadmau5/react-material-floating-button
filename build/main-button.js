@@ -19,20 +19,21 @@ var MainButton = React.createClass({
     var iconResting = classnames("mfb-component__main-icon--resting", this.props.iconResting);
     var iconActive = classnames("mfb-component__main-icon--active", this.props.iconActive);
     var mainClass = classnames("mfb-component__button--main", this.props.className);
-    var Icon = this.props.iconButton;
+    var IconResting = this.props.iconButtonResting;
+    var IconActive = this.props.iconButtonActive;
     if (this.props.label) {
       return React.createElement(
         "a",
         { href: this.props.href, className: mainClass, onClick: this.props.onClick, "data-mfb-label": this.props.label },
-        React.createElement(Icon, { className: iconResting }),
-        React.createElement(Icon, { className: iconActive })
+        React.createElement(IconResting, { className: iconResting }),
+        React.createElement(IconActive, { className: iconActive })
       );
     } else {
       return React.createElement(
         "a",
         { href: this.props.href, className: mainClass, onClick: this.props.onClick },
-        React.createElement(Icon, { className: iconResting }),
-        React.createElement(Icon, { className: iconActive })
+        React.createElement(IconResting, { className: iconResting }),
+        React.createElement(IconActive, { className: iconActive })
       );
     }
   }

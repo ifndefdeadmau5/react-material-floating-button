@@ -216,6 +216,7 @@ $number-of-child-buttons: 4 !default;
   margin: 0;
   padding: 0;
   &>li{
+    border-radius: 50%;
     background-color: white;
     display: block;
     position: absolute;
