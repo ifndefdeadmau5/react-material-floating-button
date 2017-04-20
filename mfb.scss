@@ -68,7 +68,7 @@
 /* COLORS ----------------------------*/
 
 // the main/primary color
-$main-color: #E40A5D !default;
+$main-color: #ff1744 !default;
 // aka the white text
 $bright-text: rgba(255, 255, 255, 0.8) !default;
 
@@ -95,7 +95,7 @@ $label-hover-on: .3s !default;
 // main button diameter
 $main_button_size: 56px !default;
 // main button diameter
-$child_button_size: 56px !default;
+$child_button_size: 40px !default;
 // the distance of the main button from the closest corners of the screen
 $border-distance: 25px !default;
 // font-size for labels
@@ -191,7 +191,6 @@ $number-of-child-buttons: 4 !default;
 \*------------------------------------*/
 
 .mfb-component__button{
-  background-color: $main-color;
   display: flex;
   align-items: center;
   position: relative;
@@ -261,6 +260,7 @@ $number-of-child-buttons: 4 !default;
 
 .mfb-component__button--main{
   @extend .mfb-component__button;
+  background-color: $main-color;
   height: $main_button_size;
   width: $main_button_size;
   z-index: 20;
@@ -283,6 +283,7 @@ $number-of-child-buttons: 4 !default;
 .mfb-component__child-icon,
 .mfb-component__child-icon{
   @extend .mfb-component__icon;
+  fill: $main-color;
   line-height: $child_button_size;
   font-size: 18 / 56 * $child_button_size;
 }
